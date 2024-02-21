@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    {% if prediction %}
+        <p>The predicted class is: {{ prediction }}</p>
+    {% else %}
+        <p>No prediction available.</p>
+    {% endif %}
+    <a href="{% url 'predict' %}">Go back to prediction page</a>
+</body>
+</html>
